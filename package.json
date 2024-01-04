@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=!docs && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.25.0",
+    "turbo": "^1.5.5"
+  },
+  "name": "rckt-design-sys",
+  "description": "- [ ] Button\r - [ ] Heading\r - [ ] Text\r - [ ] TextInput\r - [ ] Textarea\r - [ ] Checkbox\r - [ ] Avatar\r - [ ] MultiStep",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
